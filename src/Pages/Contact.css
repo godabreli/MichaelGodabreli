@@ -1,0 +1,42 @@
+.contactWrapper {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: white;
+  top: 0;
+  left: 0;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactWrapper h2 {
+  margin-bottom: 10px;
+}
+
+.gobackErrow {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gobackErrow:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+  .gobackErrow {
+    height: 35px;
+    width: 35px;
+    margin: 25px;
+  }
+}

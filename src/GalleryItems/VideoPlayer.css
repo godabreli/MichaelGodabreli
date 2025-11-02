@@ -1,0 +1,29 @@
+.vodeoPlayerWrapper {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeVideoPlayerButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28px;
+  height: 28px;
+  padding: 5px;
+  margin: 13px;
+  transition: 0.3s;
+  cursor: pointer;
+  z-index: 110;
+}
+
+.closeVideoPlayerButton:hover {
+  transform: scale(1.1);
+}

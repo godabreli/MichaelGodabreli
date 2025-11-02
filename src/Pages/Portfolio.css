@@ -1,0 +1,115 @@
+.portfolioWrapper {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: white;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.portfolioGrid {
+  width: 75%;
+  height: 100%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 190px auto;
+  grid-template-rows: 80px max-content;
+}
+
+.backArrow {
+  display: flex;
+  align-items: center;
+}
+
+.backArrow span {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+}
+
+.backArrow span:hover {
+  transform: scale(1.1);
+}
+
+.portfolioTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.burgerMenue {
+  width: 50px;
+  height: 100%;
+  font-size: 22px;
+  align-items: center;
+  display: none;
+}
+
+.sidebar {
+  padding-top: 20px;
+}
+
+.portfolioImages {
+  width: 100%;
+  height: calc(100vh - 100px);
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.scrollToDivTop {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: rgba(108, 107, 107, 0.699);
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+
+  .portfolioGrid {
+    width: 95%;
+    grid-template-columns: 40px auto 40px;
+    grid-template-rows: 65px max-content;
+  }
+
+  .portfolioImages {
+    grid-column: 1 / 4;
+  }
+
+  .portfolioTitle {
+    font-size: 25px;
+    justify-content: center;
+  }
+
+  .burgerMenue {
+    display: flex;
+  }
+
+  .backArrow span {
+    width: 33px;
+    height: 33px;
+  }
+}

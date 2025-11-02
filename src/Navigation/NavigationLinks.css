@@ -1,0 +1,20 @@
+.navLinks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+
+.navLinks li {
+  text-decoration: none;
+  transform-origin: left bottom;
+  display: block;
+  transition: transform 0.3s;
+  user-select: none;
+  cursor: pointer;
+}
+
+.navLinks li:hover {
+  transform: scale(1.2);
+}

@@ -1,0 +1,31 @@
+.videosWrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: fit-content;
+  gap: 10px;
+}
+
+.thumbnail {
+  width: 100%;
+  aspect-ratio: 1.7 / 1;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.thumbnailImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.thumbnailImg:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .videosWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
