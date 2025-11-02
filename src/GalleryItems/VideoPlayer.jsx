@@ -6,7 +6,7 @@ import XButtonSvg from "../Components/XButtonSvg";
 
 const VideoPlayer = (props) => {
   const videoWidth = () => {
-    if (window.innerWidth < 768) return window.innerWidth * 0.97;
+    if (window.innerWidth < 768) return window.innerWidth * 0.88;
     if (window.innerWidth > 768 && (props.index === 9 || props.index === 14))
       return 380;
 
