@@ -136,7 +136,7 @@ const Portfolio = (props) => {
                 onClick={scrollToTop}
                 style={{
                   marginLeft: containerSize.width - 60,
-                  marginTop: containerSize.height - 60,
+                  marginTop: containerSize.height - 70,
                 }}
               >
                 <ErrowLeftSVG collor="rgba(255,255,255,1)" />
