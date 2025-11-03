@@ -39,6 +39,10 @@ function Home() {
   return (
     <>
       <div className="home-wrapper">
+        <h1 className="visually-hidden">
+          Michael Godabreli – International Fashion, Advertising & Kids
+          Photographer
+        </h1>
         <div className="michaelGodabreli">
           <motion.div
             variants={container}
