@@ -1,0 +1,24 @@
+.downloadGalleryWrapper {
+  width: 70vw;
+  height: fit-content;
+  margin: 20px auto;
+}
+
+.galleryTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+#downloadGallery {
+  width: 100%;
+  height: fit-content;
+}
