@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import "./DownloadGallery.css";
 
@@ -40,6 +40,14 @@ const DownloadGallery = () => {
 
   return (
     <div className="downloadGalleryWrapper">
+      <div className="michaelGodabreli">
+        <span>Michael Godabreli</span>
+
+        <span> Photography</span>
+      </div>
+      <div className="homeButton">
+        <Link to={"/"}> HOME </Link>
+      </div>
       {loaded && <div className="galleryTitle">{galleryName}</div>}
       <div id="downloadGallery"></div>
     </div>
