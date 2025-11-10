@@ -135,7 +135,7 @@ const Portfolio = (props) => {
             }}
             onClick={scrollToTop}
           >
-            <ErrowLeftSVG collor="rgba(255,255,255,1)" />
+            <ErrowLeftSVG onClick={scrollToTop} collor="rgba(255,255,255,1)" />
           </div>
 
           {showGallery && <Gallery galleryName={galleryName} />}
