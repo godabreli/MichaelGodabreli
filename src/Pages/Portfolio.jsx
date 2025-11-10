@@ -80,6 +80,21 @@ const Portfolio = (props) => {
 
   /////////////////////////////////////////////////////////////////////
 
+  useEffect(() => {
+    const container = scrollcontainerRef.current;
+    if (!container) return;
+
+    const scrollTo = (e) => {
+      container.scrollTo({ top: e.detail.topPosition, behavior: "smooth" });
+    };
+
+    window.addEventListener("scrollDiv", scrollTo);
+
+    return () => window.removeEventListener("scrollDiv", scrollTo);
+  }, []);
+
+  //////////////////////////////////////////////////////////////////////
+
   return (
     <motion.div
       initial={{ y: 1500 }}
