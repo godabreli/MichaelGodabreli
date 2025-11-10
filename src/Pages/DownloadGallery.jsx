@@ -9,7 +9,10 @@ const DownloadGallery = () => {
 
   useEffect(() => {
     const container = document.getElementById("downloadGallery");
+    if (!container) return;
+
     const script = document.createElement("script");
+    script.id = "embed-gallery-script";
     script.src = "https://liebevollbelichtet.de/embed/embedGallery.js.iife.js";
     script.dataset.galleryName = galleryName;
     script.dataset.mode = "bright";

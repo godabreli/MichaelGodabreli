@@ -5,11 +5,6 @@ const Gallery = (props) => {
     const container = document.getElementById("galleryDiv");
     if (!container) return;
 
-    const oldScript = document.getElementById("embed-gallery-script");
-    if (oldScript) {
-      oldScript.remove();
-    }
-
     const script = document.createElement("script");
 
     script.id = "embed-gallery-script";
@@ -20,10 +15,7 @@ const Gallery = (props) => {
     container.appendChild(script);
 
     return () => {
-      // remove ONLY the gallery root, not the entire script
-      while (container.firstChild) {
-        container.removeChild(container.firstChild);
-      }
+      script.remove();
     };
   }, [props.galleryName]);
 
