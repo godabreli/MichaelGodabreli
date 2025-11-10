@@ -130,12 +130,12 @@ const Portfolio = (props) => {
               showScrollToTop ? "scrollToDivTo-visible" : ""
             }`}
             style={{
-              marginTop: containerSize.height - 65,
+              marginTop: containerSize.height - 70,
               marginLeft: containerSize.width - 65,
             }}
             onClick={scrollToTop}
           >
-            <ErrowLeftSVG onClick={scrollToTop} collor="rgba(255,255,255,1)" />
+            <ErrowLeftSVG collor="rgba(255,255,255,1)" />
           </div>
 
           {showGallery && <Gallery galleryName={galleryName} />}
