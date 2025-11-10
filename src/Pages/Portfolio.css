@@ -71,10 +71,11 @@
 
 .scrollToDivTop {
   position: fixed;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10;
+
   width: 55px;
   height: 55px;
   border-radius: 50px;

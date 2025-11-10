@@ -126,14 +126,14 @@ const Portfolio = (props) => {
         </div>
         <div className="portfolioImages" ref={scrollcontainerRef}>
           <div
-            className={`scrollToDivTo ${
+            className={`scrollToDivTop ${
               showScrollToTop ? "scrollToDivTo-visible" : ""
             }`}
-            onClick={scrollToTop}
             style={{
-              marginLeft: containerSize.width - 60,
-              marginTop: containerSize.height - 60,
+              marginTop: containerSize.height - 65,
+              marginLeft: containerSize.width - 65,
             }}
+            onClick={scrollToTop}
           >
             <ErrowLeftSVG collor="rgba(255,255,255,1)" />
           </div>
