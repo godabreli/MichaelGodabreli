@@ -125,24 +125,18 @@ const Portfolio = (props) => {
           />
         </div>
         <div className="portfolioImages" ref={scrollcontainerRef}>
-          <AnimatePresence>
-            {showScrollToTop && (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.3 }}
-                className="scrollToDivTop"
-                onClick={scrollToTop}
-                style={{
-                  marginLeft: containerSize.width - 60,
-                  marginTop: containerSize.height - 65,
-                }}
-              >
-                <ErrowLeftSVG collor="rgba(255,255,255,1)" />
-              </motion.div>
-            )}
-          </AnimatePresence>
+          <div
+            className={`scrollToDivTo ${
+              showScrollToTop ? "scrollToDivTo-visible" : ""
+            }`}
+            onClick={scrollToTop}
+            style={{
+              marginLeft: containerSize.width - 60,
+              marginTop: containerSize.height - 60,
+            }}
+          >
+            <ErrowLeftSVG collor="rgba(255,255,255,1)" />
+          </div>
 
           {showGallery && <Gallery galleryName={galleryName} />}
           {showVideos && (

@@ -82,6 +82,12 @@
   background-color: rgba(108, 107, 107, 0.699);
   cursor: pointer;
   transform: rotate(90deg);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.scrollToDivTo-visible {
+  opacity: 1;
 }
 
 @media (max-width: 900px) {
